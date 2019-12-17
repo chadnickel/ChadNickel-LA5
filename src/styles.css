@@ -23,6 +23,7 @@ html,body {
     display: grid;
     grid-template-columns: 1fr 12fr 2fr;
     height: 100%;
+    width: 100%;
 }
 
 .row-two {
@@ -30,8 +31,11 @@ html,body {
 }
 
 .container-padding {
-    margin: 12px;
-    padding: 5px;
-    border:1px dashed rgb(238, 11, 11);
+    margin: 8px;
+  
+    
 
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

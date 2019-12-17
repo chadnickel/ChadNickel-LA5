@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-header',
@@ -10,7 +11,9 @@ export class MainHeaderComponent implements OnInit {
   lastName = 'Nickel';
   greeting = 'R1C2';
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
   }
@@ -24,5 +27,12 @@ export class MainHeaderComponent implements OnInit {
 
     this.greeting = 'R1C2';
   }
+
+  navigateTo(path: string) {
+    this.router.navigate([path]);
+  }
+
+
+
 }
 

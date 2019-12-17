@@ -1,6 +1,24 @@
-<div class="row-one">
+<!-- <div class="row-one">
     <div class="container-padding">R1C1</div>
     <div (mouseenter)="showGreeting()" (mouseleave)="resetGreeting()" id="R1C2"
       class="container-padding">{{greeting}}</div>
-    <div class="container-padding">R1C3</div>
-  </div>
+    <div class="container-padding">R1C3</div> -->
+    
+  <!-- </div> -->
+  <mat-toolbar color="accents" class="toolbar">
+    <div class="row-one">
+      <div class="container-padding"> <span>R1C1</span> </div>
+      <div id="R1C2" class="container-padding">
+
+        <button (click)="navigateTo('')" class="nav-button"  type=button mat-raised-button color="warn" (click)="saveStudent()" >
+         Home
+        </button>
+        <button (click)="navigateTo('courses')" class="nav-button" type=button mat-raised-button color="accent">
+         Courses
+         </button>
+      </div>
+      <div class="container-padding"><mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">favorite</mat-icon></div>
+      
+    </div>
+  </mat-toolbar>
+  
